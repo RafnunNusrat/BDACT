@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BD ACT</string>
+    <string name="bd_act">BD ACT\n</string>
+    <string name="bangladesh_ancillary_course_training">Bangladesh Ancillary Course Training</string>
+    <string name="login">Login\n</string>
+    <string name="new_registration">New Registration</string>
+    <string name="back">Back\n</string>
+    <string name="next">Next\n</string>
+    <string name="cdc_number">CDC Number</string>
+    <string name="place_of_birth">Place Of Birth</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="father_name">Father Name</string>
+    <string name="name">Name</string>
+    <string name="fill_out_the_form_carefully">Fill out the form carefully\n</string>
+    <string name="registration_form">Registration Form\n</string>
+    <string name="select_your_type">Select Your Type</string>
+    <string name="present_address">Present Address\n</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="nid_number">NID Number\n</string>
+    <string name="passport_number">Passport Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="verify_number">Verify Number</string>
+    <string name="use_code">Use Code</string>
+    <string name="email_address">Email Address</string>
+    <string name="verify_email_address">Verify Email Address</string>
+    <string name="password">Password</string>
+    <string name="retype_password">Retype Password</string>
+
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="ancillary_course_training">Ancillary Course Training</string>
+    <string name="bangladesh">Bangladesh</string>
+
+</resources>

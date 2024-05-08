@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BDACT"
+        tools:targetApi="31">
+        <activity
+            android:name=".Application_con"
+            android:exported="false" />
+        <activity
+            android:name=".Reg_Con"
+            android:exported="false" />
+        <activity
+            android:name=".option_check"
+            android:exported="false" />
+        <activity
+            android:name=".Application_form"
+            android:exported="false" />
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".My_courses"
+            android:exported="false" />
+        <activity
+            android:name=".Course_details"
+            android:exported="false" />
+        <activity
+            android:name=".sche"
+            android:exported="false" />
+        <activity
+            android:name=".MainCourseSchedule"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false" />
+        <activity
+            android:name=".MainCourses"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="true" />
+        <activity
+            android:name=".Registration_fingerprint"
+            android:exported="false" />
+        <activity
+            android:name=".Password"
+            android:exported="false" />
+        <activity
+            android:name=".Registration_signature"
+            android:exported="false" />
+        <activity
+            android:name=".Registration_gallery"
+            android:exported="false" />
+        <activity
+            android:name=".Registration_pic"
+            android:exported="false" />
+        <activity
+            android:name=".Registration5"
+            android:exported="false" />
+        <activity
+            android:name=".Registration4"
+            android:exported="false" />
+        <activity
+            android:name=".Registration3"
+            android:exported="false" />
+        <activity
+            android:name=".Registration2"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Open_page"
+            android:exported="true" />
+        <activity
+            android:name=".Splash_screen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <FrameLayout
+        android:id="@+id/top_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/topNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </FrameLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@id/topNavigationView"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:background="#D5ECFF"
+        android:hapticFeedbackEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_menu">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/app_logo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Bangladesh"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Ancillary Course Training"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/baseline_notifications_none_24" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        >
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop= "20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="User Profile"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"></TextView>
+    <ImageView
+
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Name : MD SWAPNO SAMIULLAH" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CDC Number: C/O/10016" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="C/O/10016" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+android:id="@+id/bottomNavigationView"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+app:backgroundTint="#D5ECFF"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="parent"
+    app:menu="@menu/nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

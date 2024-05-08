@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Application_form">
+
+
+        <FrameLayout
+            android:id="@+id/top_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@+id/topNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+        </FrameLayout>
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@id/topNavigationView"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:background="#D5ECFF"
+            android:hapticFeedbackEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/top_menu">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/app_logo" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Bangladesh"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ancillary Course Training"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/baseline_notifications_none_24" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            >
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop= "20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:text="Application Form"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Name :" />
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="MD SWAPNO SAMIULLAH" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Father's Name :" />
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="MD SHARIF HASAN" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Mother's Name :" />
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="MST SHAHINUR AKTER" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Date of Birth :" />
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="12.09.1997" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Place of Birth :" />
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="THAKURGAON" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="CDC :" />
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="C/O/10016" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Course Duration :" />
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="02.06.2024 to 04.06.2024 (3 Days)" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Picture :" />
+                        <ImageView
+
+                            android:id="@+id/imageView4"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            app:srcCompat="@drawable/profile"
+                            android:layout_marginTop="10dp" /></LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Signature :" />
+                        <ImageView
+
+                            android:id="@+id/imageView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/sign" /></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/backButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="left"
+                            android:text="@string/back" />
+
+                        <Button
+                            android:id="@+id/nextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="right"
+                            android:text="@string/next" />
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="130dp"
+                        android:text=" "/>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#D5ECFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/nav_menu" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

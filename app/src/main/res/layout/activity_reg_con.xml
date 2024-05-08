@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reg_Con">
+    <FrameLayout
+        android:id="@+id/top_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/topNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </FrameLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@id/topNavigationView"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:background="#D5ECFF"
+        android:hapticFeedbackEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_menu">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/app_logo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Bangladesh"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Ancillary Course Training"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/baseline_notifications_none_24" />
+    </com.google.android.material.appbar.MaterialToolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!!!"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Registration is completed"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Check your email for further instructions and after 24 hours you will be able to login."
+        android:textSize="16sp"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="343dp" /></LinearLayout>
+    <FrameLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#D5ECFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

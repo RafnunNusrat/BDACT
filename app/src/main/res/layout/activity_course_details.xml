@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Course_details">
+
+    <FrameLayout
+        android:id="@+id/top_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/topNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </FrameLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@id/topNavigationView"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:background="#D5ECFF"
+        android:hapticFeedbackEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_menu">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/app_logo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Bangladesh"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Ancillary Course Training"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/baseline_notifications_none_24" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop= "20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#CED2F1"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="100dp"
+            tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#DDE8FF"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Course Duration "
+                android:gravity="center_horizontal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Course Fee "
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=" Certificate Fee "
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+               >
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 3 Days "
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 2000 /= "
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 200/= (optional) "
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                   />
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text=" How to do the course "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="1. Check schedule for the course " />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="2. Apply for the course in any schedule " />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="3. Fill up application form " />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="4. Complete online payment " />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="5. You will get confirmation letter in your given mail  address with a course note (pdf) " />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="6. You can start the course from schedule day at 10:00 am " />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="7. Complete the classes one by one " />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="8. After completion of all classes, you can apply for certificate " />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="9. With this certificate you can apply for COP in DG Shipping " />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="10. If you need Hardcopy of certificate, you need to apply for this.Make certificate within 7 days through courier " />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+ >
+        <Button
+            android:id="@+id/btnSche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="left"
+
+            android:text="Check Schedule" />
+    <Button
+        android:id="@+id/applyform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:text="Apply for Course" />
+
+</LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:text=" "/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#D5ECFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

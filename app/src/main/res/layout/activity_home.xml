@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <FrameLayout
+        android:id="@+id/top_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/topNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </FrameLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@id/topNavigationView"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:background="#D5ECFF"
+        android:hapticFeedbackEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_menu">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/app_logo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Bangladesh"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Ancillary Course Training"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/baseline_notifications_none_24" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+            >
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                        <ViewFlipper
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:autoStart="true"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:flipInterval="2000"
+                            android:inAnimation="@android:anim/slide_in_left"
+                            android:outAnimation="@android:anim/slide_out_right"
+                            >
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="250dp"
+                                android:layout_height="120dp"
+                                app:srcCompat="@drawable/image1"
+                              />
+                            <ImageView
+                                android:id="@+id/imageView20"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="250dp"
+                                android:layout_height="120dp"
+                                app:srcCompat="@drawable/image2" />
+                            <ImageView
+                                android:id="@+id/imageView30"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="250dp"
+                                android:layout_height="120dp"
+                                app:srcCompat="@drawable/image3" />
+                        </ViewFlipper>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="16dp"
+
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/course"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/course"
+                                    android:clickable="true"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textView7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Main Courses" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="16dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/refresher"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/refresher_course"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Refresher Courses" />
+                            </androidx.appcompat.widget.LinearLayoutCompat></androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="4dp">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/schedule"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/schedule" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text=" Main Course Schedule" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="4dp">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/sche"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/sche" />
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Ref Course Schedule" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="16dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/myCourses"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/mycourse"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/my_courses"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="My Courses" />
+                            </androidx.appcompat.widget.LinearLayoutCompat></androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="16dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/pay"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/payment"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/payment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Payment Method" />
+                            </androidx.appcompat.widget.LinearLayoutCompat></androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="16dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/instructional"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/instruction"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Instruction Manual" />
+                            </androidx.appcompat.widget.LinearLayoutCompat></androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="16dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/otherCourse"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/other_courses"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Other Courses" />
+                            </androidx.appcompat.widget.LinearLayoutCompat></androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="16dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/notifi"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/notification"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Course Notification" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="16dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/faq"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/faq"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Frequently Asked Ques" />
+                            </androidx.appcompat.widget.LinearLayoutCompat></androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="16dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/certification"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/certificate"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/certificate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Certification" />
+                            </androidx.appcompat.widget.LinearLayoutCompat></androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touchCard12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="16dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/feedback"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:srcCompat="@drawable/feedback"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/feed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Feedback/Complaint" />
+                            </androidx.appcompat.widget.LinearLayoutCompat></androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="130dp"
+                        android:text=" "/>
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#D5ECFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

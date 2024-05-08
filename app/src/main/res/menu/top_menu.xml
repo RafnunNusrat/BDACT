@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <item
+        android:id="@+id/user"
+        android:title="MD SWAPNO SAMIULLAH"
+        app:showAsAction="collapseActionView"
+        android:alphabeticModifiers="META"
+        />
+    <item
+        android:id="@+id/cdcnum"
+        android:title="C/O/10016"
+        android:alphabeticModifiers="SHIFT"
+        app:showAsAction="collapseActionView" />
+    <group
+        android:id="@+id/men"
+        >
+
+        <item
+            android:id="@+id/appinfo"
+            android:title="App info"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/helpline"
+            android:title="Help Line"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/share"
+            android:title="Share App"
+            app:showAsAction="collapseActionView"/>
+        <item
+            android:id="@+id/rate"
+            android:title="Rate us"
+            app:showAsAction="collapseActionView"/>
+        <item
+            android:id="@+id/privacy"
+            android:title="Privacy Policy"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/logout"
+            android:title="Log Out"
+            app:showAsAction="collapseActionView"/>
+    </group>
+
+
+</menu>

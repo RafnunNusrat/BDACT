@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_back"
+    android:orientation="vertical"
+    tools:context=".Splash_screen">
+
+    <ImageView
+        android:id="@+id/SplashScreenImage"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/app_logo"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#FFE3FF"
+        android:shadowRadius="40"
+        android:layout_gravity="center"
+        android:text="@string/bangladesh"
+        android:textColor="#3949AB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="252dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#FFE3FF"
+        android:shadowRadius="40"
+        android:layout_gravity="center"
+        android:text="@string/ancillary_course_training"
+        android:textColor="#3949AB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="252dp" />
+</LinearLayout>
